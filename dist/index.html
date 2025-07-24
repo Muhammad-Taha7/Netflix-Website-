@@ -7,9 +7,10 @@
   <title>Netlfix Clon with Tailwind css</title>
   <link rel="stylesheet" href="output.css">
   <link rel="stylesheet" href="/src/input.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="p-0 m-0">
+<body class="p-0 m-0 overflow-y-scroll scrollbar-thin scrollbar-thumb-red-600 scrollbar-track-black">
  <div class="relative h-[50rem] md:min-h-screen w-full bg-[url('/Images/bg.jpg')] bg-cover bg-center bg-no-repeat before:absolute before:inset-0 before:bg-black/80 before:z-0">
   <div class="relative z-10">
         <nav class="flex justify-between px-[0rem] md:px-[4rem] lg:px-[8rem] items-center">
@@ -20,26 +21,121 @@
                 <button class="bg-red-700 text-white px-4 py-2 mr-5 md:m-0 md:px-6 md:py-3 font-medium rounded-md hover:bg-red-950 duration-300 hover:duration-300">Sign In</button>
             </div>
         </nav>
-        <div class="hero_section flex justify-center  items-center">
-                <div class="mid flex justify-center items-center flex-col  md:mt-[8rem] lg:mt-[10rem] text-white text-center md:h-[30rem] w-[30rem]  md:w-[50rem] h-[40rem] max-w-[70rem] p-5">
-                    <h2 class="text-[2.5rem] pt-[6rem] px-4 md:p-0 md:text-[3.7rem] lg:text-[5rem] font-poppins leading-[3rem] md:leading-[4.3rem] lg:leading-[5rem]  font-bold">Unlimited movies, TV shows, and more</h2>
-                    <h3 class="text-[1rem] px-5 md:p-0 lg:pt-[1rem] md:text-[1.5rem] font-poppins pt-[2rem]">Starts at Rs 250. Cancel anytime.</h3>
-                    <h4 class=" text-[1rem] px-5 md:p-0  pt-[1rem] md:text-[1.2rem] font-poppins md:pt-[1.4rem] lg:pt-[1rem]">Ready to watch? Enter your email to create or restart your membership.</h4>
-                    <div class="input px-20 py-8 md:p-0 md:mt-[2.5rem] flex flex-wrap md:flex-nowrap  gap-4 md:gap-3  ">
-                        <form class="">
-                            <input type="text" class="h-[4rem] md:h-[3.8rem] lg:min-h-[4.2rem] w-[25rem] lg:w-[40rem] bg-transparent border rounded-md pl-3">
-                        </form>
-                        <div class="btn">
-                            <button class=" py-[1.2rem] px-[10rem] lg:py-[0.7rem] md:px-14 lg:px-20  font-poppins  bg-[#D82126] hover:duration-300 hover:bg-red-700 duration-300 rounded-md">Get Started</button>
-                        </div>
-                    </div>
-                </div>
-        </div>
+       <div class="hero_section flex justify-center items-center">
+  <div class="mid flex justify-center items-center flex-col text-white text-center h-[40rem] w-[100%] max-w-[70rem] p-5 md:mt-[8rem] lg:mt-[10rem] md:h-[30rem] md:w-[50rem]">
+    
+    <!-- Heading -->
+    <h2 class="text-[2rem] pt-[3rem] px-4 font-poppins leading-[2.6rem] font-bold sm:text-[2.5rem] sm:leading-[3rem] md:p-0 md:text-[3.7rem] md:leading-[4.3rem] lg:text-[5rem] lg:leading-[5rem]">
+      Unlimited movies, TV shows, and more
+    </h2>
+    
+    <!-- Subheading -->
+    <h3 class="text-[1rem] pt-[1.5rem] px-4 font-poppins sm:px-5 sm:pt-[2rem] md:p-0 md:text-[1.5rem] lg:pt-[1rem]">
+      Starts at Rs 250. Cancel anytime.
+    </h3>
+    
+    <!-- Paragraph -->
+    <h4 class="text-[0.9rem] pt-[1rem] px-4 font-poppins sm:px-5 sm:pt-[1.2rem] md:p-0 md:text-[1.2rem] md:pt-[1.4rem] lg:pt-[1rem]">
+      Ready to watch? Enter your email to create or restart your membership.
+    </h4>
+    
+    <!-- Input & Button -->
+    <div class="input mt-6 flex flex-col gap-4 items-center sm:flex-col md:flex-row md:gap-3 md:mt-[2.5rem]">
+      <form class="w-[90%] sm:w-[90%] md:w-auto">
+        <input type="text" class="h-[3.5rem] w-full bg-transparent border rounded-md pl-3 sm:w-[25rem] md:h-[3.8rem] lg:min-h-[4.2rem] lg:w-[40rem]">
+      </form>
+      <div class="btn w-[90%] sm:w-[90%] md:w-auto">
+        <button class="w-full py-[1rem] text-white font-poppins bg-[#D82126] hover:bg-red-800 duration-300 rounded-md sm:px-[5rem] md:px-14 lg:px-20 lg:py-[0.7rem]">
+          Get Started
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
   </div>
 </div>
 
 
 
 
+
+
+<div class="box bg-black h-[50rem] w-[100%] border-t-8 border-red-700">
+  <!-- Heading -->
+  <span class="relative inline-block group ml-[1.4rem]  md:text-left lg:ml-[20rem] mt-[4rem] sm:ml-8 sm:mt-8">
+    <span class="text-white text-[1.8rem] md:text-[2.5rem] font-poppins cursor-pointer sm:text-[2rem]">Trending <span class="text-red-700">Now</span></span>
+    <span class="absolute left-0 bottom-0 h-[2px] w-0 bg-red-600 transition-all duration-500 group-hover:w-full"></span>
+  </span>
+
+  <!-- Container -->
+  <div class="relative w-full max-w-7xl mx-auto pt-24 lg:pt-[6rem] sm:pt-12">
+    <!-- Left Arrow (Now visible on mobile/tablet) -->
+    <button id="slide-left" class="absolute left-2 top-1/2 transform -translate-y-1/2 text-red-600 text-[2.5rem] z-10 lg:text-[4.2rem] lg:-left-[5.3rem]">
+      <i class="fa-solid fa-arrow-left"></i>
+    </button>
+
+    <!-- Slider -->
+    <div id="slider" class="overflow-x-scroll scroll-snap-x mandatory flex gap-6 px-8 scrollbar-hide sm:px-4">
+      <!-- Cards -->
+      <div class="flex-shrink-0 w-80 h-[30rem] md:h-[30rem] bg-yellow-100 rounded-xl shadow-lg scroll-snap-center sm:w-[18rem] sm:h-[22rem]">
+        <img src="/Images/1.webp" class="object-cover object-center bg-no-repeat h-[100%] w-[100%]" alt="">
+      </div>
+      <div class="flex-shrink-0 w-80 h-[30rem] md:h-[30rem] bg-yellow-100 rounded-xl shadow-lg scroll-snap-center sm:w-[18rem] sm:h-[22rem]">
+        <img src="/Images/2.webp" class="object-cover object-center bg-no-repeat h-[100%] w-[100%]" alt="">
+      </div>
+       <div class="flex-shrink-0 w-80 h-[30rem] md:h-[30rem] bg-yellow-100 rounded-xl shadow-lg scroll-snap-center sm:w-[18rem] sm:h-[22rem]">
+        <img src="/Images/3.webp" class="object-cover object-center bg-no-repeat h-[100%] w-[100%]" alt="">
+      </div>
+      <div class="flex-shrink-0 w-80 h-[30rem] md:h-[30rem] bg-yellow-100 rounded-xl shadow-lg scroll-snap-center sm:w-[18rem] sm:h-[22rem]">
+        <img src="/Images/4.webp" class="object-cover object-center bg-no-repeat h-[100%] w-[100%]" alt="">
+      </div>
+     <div class="flex-shrink-0 w-80 h-[30rem] md:h-[30rem] bg-yellow-100 rounded-xl shadow-lg scroll-snap-center sm:w-[18rem] sm:h-[22rem]">
+        <img src="/Images/5.jpg" class="object-cover object-center bg-no-repeat h-[100%] w-[100%]" alt="">
+      </div>
+       <div class="flex-shrink-0 w-80 h-[30rem] md:h-[30rem] bg-yellow-100 rounded-xl shadow-lg scroll-snap-center sm:w-[18rem] sm:h-[22rem]">
+        <img src="/Images/6.jpg" class="object-cover object-center bg-no-repeat h-[100%] w-[100%]" alt="">
+      </div>
+       <div class="flex-shrink-0 w-80 h-[30rem] md:h-[30rem] bg-yellow-100 rounded-xl shadow-lg scroll-snap-center sm:w-[18rem] sm:h-[22rem]">
+        <img src="/Images/7.jpg" class="object-cover object-center bg-no-repeat h-[100%] w-[100%]" alt="">
+      </div>
+      <div class="flex-shrink-0 w-80 h-[30rem] md:h-[30rem] bg-yellow-100 rounded-xl shadow-lg scroll-snap-center sm:w-[18rem] sm:h-[22rem]">
+        <img src="/Images/8.jpg" class="object-cover object-center bg-no-repeat h-[100%] w-[100%]" alt="">
+      </div>
+      <div class="flex-shrink-0 w-80 h-[30rem] md:h-[30rem] bg-yellow-100 rounded-xl shadow-lg scroll-snap-center sm:w-[18rem] sm:h-[22rem]">
+        <img src="/Images/9.jpg" class="object-cover object-center bg-no-repeat h-[100%] w-[100%]" alt="">
+      </div>
+       <div class="flex-shrink-0 w-80 h-[30rem] md:h-[30rem] bg-yellow-100 rounded-xl shadow-lg scroll-snap-center sm:w-[18rem] sm:h-[22rem]">
+        <img src="/Images/10.jpg" class="object-cover object-center bg-no-repeat h-[100%] w-[100%]" alt="">
+      </div>
+
+    </div>
+
+    <!-- Right Arrow -->
+    <button id="slide-right" class="absolute right-2 top-1/2 transform -translate-y-1/2 text-red-600 text-[2.5rem] z-10 lg:text-[4.2rem] lg:-right-[5.6rem]">
+      <i class="fa-solid fa-arrow-right-long"></i>
+    </button>
+  </div>
+
+  <!-- Hide scrollbar -->
+  <style>
+    .scrollbar-hide::-webkit-scrollbar { display: none; }
+    .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+
+  <!-- JS -->
+  <script>
+    const slider = document.getElementById('slider');
+    document.getElementById('slide-left').addEventListener('click', () => {
+      slider.scrollBy({ left: -300, behavior: 'smooth' });
+    });
+    document.getElementById('slide-right').addEventListener('click', () => {
+      slider.scrollBy({ left: 300, behavior: 'smooth' });
+    });
+  </script>
+</div>
+
+
 </body>
-</html>
+</html> 
