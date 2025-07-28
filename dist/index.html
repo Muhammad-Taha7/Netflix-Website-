@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="p-0 m-0 overflow-y-scroll scrollbar-thin scrollbar-thumb-red-600 scrollbar-track-black">
+<body class="p-0 m-0 overflow-y-scroll scrollbar-thin scrollbar-thumb-red-600 scrollbar-track-black bg-black">
  <div class="relative h-[50rem] md:min-h-screen w-full bg-[url('/Images/bg.jpg')] bg-cover bg-center bg-no-repeat before:absolute before:inset-0 before:bg-black/80 before:z-0">
   <div class="relative z-10">
         <nav class="flex justify-between px-[0rem] md:px-[4rem] lg:px-[8rem] items-center">
@@ -62,61 +62,273 @@
 
 
 
-<div class="box bg-black h-[50rem] w-[100%] border-t-8 border-red-700">
+<div class="box bg-black h-[50rem] w-[100%] pt-[2rem] md:pt-[5rem]">
   <!-- Heading -->
-  <span class="relative inline-block group ml-[1.4rem]  md:text-left lg:ml-[20rem] mt-[4rem] sm:ml-8 sm:mt-8">
-    <span class="text-white text-[1.8rem] md:text-[2.5rem] font-poppins cursor-pointer sm:text-[2rem]">Trending <span class="text-red-700">Now</span></span>
+  <span class="relative inline-block group ml-[1.4rem]  md:text-left lg:ml-[27rem] mt-[4rem] sm:ml-8 sm:mt-8">
+    <span class="text-white text-[1.8rem] md:text-[2.5rem] font-poppins cursor-pointer sm:text-[2rem] md:pt-[10rem]">Trending <span class="text-red-700">Now</span></span>
     <span class="absolute left-0 bottom-0 h-[2px] w-0 bg-red-600 transition-all duration-500 group-hover:w-full"></span>
   </span>
 
   <!-- Container -->
-  <div class="relative w-full max-w-7xl mx-auto pt-24 lg:pt-[6rem] sm:pt-12">
+  <div class="relative w-full max-w-7xl mx-auto pt-24 lg:pt-[6rem] sm:pt-12 md:mt-[5rem] lg:mt-0">
     <!-- Left Arrow (Now visible on mobile/tablet) -->
-    <button id="slide-left" class="absolute left-2 top-1/2 transform -translate-y-1/2 text-red-600 text-[2.5rem] z-10 lg:text-[4.2rem] lg:-left-[5.3rem]">
-      <i class="fa-solid fa-arrow-left"></i>
+    <button id="slide-left" class="absolute left-2 top-[60%]  transform -translate-y-1/2 text-red-600 text-[2.5rem] z-10 lg:text-[4.2rem] lg:-left-[5.3rem]">
+      <i class="fa-solid fa-arrow-left md:pr-[15rem]"></i>
     </button>
 
     <!-- Slider -->
-    <div id="slider" class="overflow-x-scroll scroll-snap-x mandatory flex gap-6 px-8 scrollbar-hide sm:px-4">
+    <div id="slider" class="overflow-x-scroll scroll-snap-x mandatory flex md:gap-6 px-8 scrollbar-hide sm:px-4">
       <!-- Cards -->
-      <div class="flex-shrink-0 w-80 h-[30rem] md:h-[30rem] bg-yellow-100 rounded-xl shadow-lg scroll-snap-center sm:w-[18rem] sm:h-[22rem]">
+      <div class="flex-shrink-0 w-80 p-7 md:p-0 h-[30rem] md:h-[30rem]  rounded-xl shadow-lg scroll-snap-center sm:w-[18rem] sm:h-[22rem]">
         <img src="/Images/1.webp" class="object-cover object-center bg-no-repeat h-[100%] w-[100%]" alt="">
       </div>
-      <div class="flex-shrink-0 w-80 h-[30rem] md:h-[30rem] bg-yellow-100 rounded-xl shadow-lg scroll-snap-center sm:w-[18rem] sm:h-[22rem]">
+      <div class="flex-shrink-0 p-7 md:p-0 w-80 h-[30rem] md:h-[30rem]  rounded-xl shadow-lg scroll-snap-center sm:w-[18rem] sm:h-[22rem]">
         <img src="/Images/2.webp" class="object-cover object-center bg-no-repeat h-[100%] w-[100%]" alt="">
       </div>
-       <div class="flex-shrink-0 w-80 h-[30rem] md:h-[30rem] bg-yellow-100 rounded-xl shadow-lg scroll-snap-center sm:w-[18rem] sm:h-[22rem]">
+       <div class="flex-shrink-0 p-7 md:p-0 w-80 h-[30rem] md:h-[30rem]  rounded-xl shadow-lg scroll-snap-center sm:w-[18rem] sm:h-[22rem]">
         <img src="/Images/3.webp" class="object-cover object-center bg-no-repeat h-[100%] w-[100%]" alt="">
       </div>
-      <div class="flex-shrink-0 w-80 h-[30rem] md:h-[30rem] bg-yellow-100 rounded-xl shadow-lg scroll-snap-center sm:w-[18rem] sm:h-[22rem]">
+      <div class="flex-shrink-0 p-7 md:p-0 w-80 h-[30rem] md:h-[30rem]  rounded-xl shadow-lg scroll-snap-center sm:w-[18rem] sm:h-[22rem]">
         <img src="/Images/4.webp" class="object-cover object-center bg-no-repeat h-[100%] w-[100%]" alt="">
       </div>
-     <div class="flex-shrink-0 w-80 h-[30rem] md:h-[30rem] bg-yellow-100 rounded-xl shadow-lg scroll-snap-center sm:w-[18rem] sm:h-[22rem]">
+     <div class="flex-shrink-0 p-7 md:p-0 w-80 h-[30rem] md:h-[30rem]  rounded-xl shadow-lg scroll-snap-center sm:w-[18rem] sm:h-[22rem]">
         <img src="/Images/5.jpg" class="object-cover object-center bg-no-repeat h-[100%] w-[100%]" alt="">
       </div>
-       <div class="flex-shrink-0 w-80 h-[30rem] md:h-[30rem] bg-yellow-100 rounded-xl shadow-lg scroll-snap-center sm:w-[18rem] sm:h-[22rem]">
+       <div class="flex-shrink-0 p-7 md:p-0 w-80 h-[30rem] md:h-[30rem]  rounded-xl shadow-lg scroll-snap-center sm:w-[18rem] sm:h-[22rem]">
         <img src="/Images/6.jpg" class="object-cover object-center bg-no-repeat h-[100%] w-[100%]" alt="">
       </div>
-       <div class="flex-shrink-0 w-80 h-[30rem] md:h-[30rem] bg-yellow-100 rounded-xl shadow-lg scroll-snap-center sm:w-[18rem] sm:h-[22rem]">
+       <div class="flex-shrink-0 p-7 md:p-0 w-80 h-[30rem] md:h-[30rem] rounded-xl shadow-lg scroll-snap-center sm:w-[18rem] sm:h-[22rem]">
         <img src="/Images/7.jpg" class="object-cover object-center bg-no-repeat h-[100%] w-[100%]" alt="">
       </div>
-      <div class="flex-shrink-0 w-80 h-[30rem] md:h-[30rem] bg-yellow-100 rounded-xl shadow-lg scroll-snap-center sm:w-[18rem] sm:h-[22rem]">
+      <div class="flex-shrink-0 p-7 md:p-0 w-80 h-[30rem] md:h-[30rem]  rounded-xl shadow-lg scroll-snap-center sm:w-[18rem] sm:h-[22rem]">
         <img src="/Images/8.jpg" class="object-cover object-center bg-no-repeat h-[100%] w-[100%]" alt="">
       </div>
-      <div class="flex-shrink-0 w-80 h-[30rem] md:h-[30rem] bg-yellow-100 rounded-xl shadow-lg scroll-snap-center sm:w-[18rem] sm:h-[22rem]">
+      <div class="flex-shrink-0 p-7 md:p-0 w-80 h-[30rem] md:h-[30rem]  rounded-xl shadow-lg scroll-snap-center sm:w-[18rem] sm:h-[22rem]">
         <img src="/Images/9.jpg" class="object-cover object-center bg-no-repeat h-[100%] w-[100%]" alt="">
       </div>
-       <div class="flex-shrink-0 w-80 h-[30rem] md:h-[30rem] bg-yellow-100 rounded-xl shadow-lg scroll-snap-center sm:w-[18rem] sm:h-[22rem]">
+       <div class="flex-shrink-0  p-7 md:p-0 w-80 h-[30rem] md:h-[30rem] rounded-xl shadow-lg scroll-snap-center sm:w-[18rem] sm:h-[22rem]">
         <img src="/Images/10.jpg" class="object-cover object-center bg-no-repeat h-[100%] w-[100%]" alt="">
       </div>
 
     </div>
 
     <!-- Right Arrow -->
-    <button id="slide-right" class="absolute right-2 top-1/2 transform -translate-y-1/2 text-red-600 text-[2.5rem] z-10 lg:text-[4.2rem] lg:-right-[5.6rem]">
+    <button id="slide-right" class="absolute right-2 top-[60%] transform -translate-y-1/2 text-red-600 text-[2.5rem] z-10 lg:text-[4.2rem] lg:-right-[5.6rem]">
       <i class="fa-solid fa-arrow-right-long"></i>
     </button>
   </div>
+
+
+<div class="reason flex justify-center items-center bg-black pt-16 px-4">
+  <div class="max-w-7xl w-full">
+    
+    <!-- Heading -->
+    <div class="text-center md:text-left mb-10 md:mt-[10rem]">
+      <h2 class="text-white text-[2rem] md:text-[2.5rem]  font-poppins relative inline-block group">
+        More Reasons to<span class="text-red-600"> Join</span>
+        <span class="absolute left-0 bottom-0 h-[2px] w-0 bg-red-600 transition-all duration-500 group-hover:w-full"></span>
+      </h2>
+    </div>
+
+    <!-- Cards -->
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      
+      <!-- Card 1 -->
+      <div class="bg-gradient-to-b from-[#1b1134] to-[#1b1134]/80 rounded-xl p-6 flex flex-col justify-between h-80 shadow-md">
+        <div>
+          <h3 class="text-lg font-semibold h text-white md:text-[1.4rem] font-poppins md:pt-6 mb-2">Enjoy on your TV</h3>
+          <p class="text-sm text-gray-300 md:text-[1rem] leading-[1.6rem] mt-7 font-poppins">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+        </div>
+        <img src="https://img.icons8.com/fluency/48/monitor.png" alt="TV Icon" class="w-10 self-end mt-4"/>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-gradient-to-b from-[#1b1134] to-[#1b1134]/80 rounded-xl p-6 flex flex-col justify-between h-80 shadow-md">
+        <div>
+          <h3 class="text-lg font-medium md:mt-[1.6rem] mb-2 md:text-[1.4rem] font-poppins text-white">Download your shows to watch offline</h3>
+          <p class="text-sm text-gray-300  md:text-[1rem] leading-[1.6rem] mt-7 font-poppins">Save your favorites easily and always have something to watch.</p>
+        </div>
+        <img src="https://img.icons8.com/fluency/48/download.png" alt="Download Icon" class="w-10 self-end mt-4"/>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-gradient-to-b from-[#1b1134] to-[#1b1134]/80 rounded-xl p-6 flex flex-col justify-between h-80 shadow-md">
+        <div>
+          <h3 class="text-lg font-semibold mb-2 text-white md:text-[1.4rem] font-poppins md:mt-[1.5rem]">Watch everywhere</h3>
+          <p class="text-sm text-gray-300 md:text-[1rem] leading-[1.6rem] mt-7 font-poppins">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+        </div>
+        <img src="https://img.icons8.com/fluency/48/flash-on.png" alt="Everywhere Icon" class="w-10 self-end mt-4"/>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-gradient-to-b from-[#1b1134] to-[#1b1134]/80 rounded-xl p-6 flex flex-col justify-between  h-80 shadow-md">
+        <div>
+          <h3 class="text-lg font-semibold mb-2 text-white md:text-[1.4rem] font-poppins md:mt-[1.3rem]">Create profiles for kids</h3>
+          <p class="text-sm text-gray-300 md:text-[1rem] leading-[1.6rem] mt-3 font-poppins">Send kids on adventures with their favorite characters in a space made just for them — free with your membership.</p>
+        </div>
+        <img src="https://img.icons8.com/fluency/48/happy.png" alt="Kids Icon" class="w-10 self-end mt-4"/>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- FAQ Section -->
+<section>
+  <div class="w-full max-w-[90rem] mx-auto rounded-2xl shadow-xl px-4 sm:px-6 md:px-10 py-8 sm:py-10 md:py-12">
+
+    <!-- Heading -->
+    <h2 class="text-3xl sm:text-4xl md:text-6xl font-bold text-center text-black mb-10 sm:mb-12">Frequently Asked Questions</h2>
+
+    <!-- Accordion Container -->
+    <div class="space-y-4 sm:space-y-6">
+
+      <!-- FAQ Item 1 -->
+      <div class="bg-[#2d2d2d] rounded-lg overflow-hidden">
+        <button class="w-full flex justify-between items-center px-4 sm:px-6 py-6 sm:py-8 text-left text-lg sm:text-xl md:text-[1.7rem] font-semibold text-white accordion-toggle">
+          What is Netflix?
+          <span class="text-2xl sm:text-3xl font-bold ml-2">+</span>
+        </button>
+        <div class="accordion-content px-4 sm:px-6 pb-4 sm:pb-5 text-gray-300 hidden">
+          <p class="font-poppins text-base sm:text-lg md:text-[1.3rem] md:leading-[2.6rem]">
+            Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
+            <br><br>
+            You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ Item 2 -->
+      <div class="bg-[#2d2d2d] rounded-lg overflow-hidden">
+        <button class="w-full flex justify-between items-center px-4 sm:px-6 py-6 sm:py-8 text-left text-lg sm:text-xl md:text-[1.7rem] font-semibold text-white accordion-toggle">
+          How much does Netflix cost?
+          <span class="text-2xl sm:text-3xl font-bold ml-2">+</span>
+        </button>
+        <div class="accordion-content px-4 sm:px-6 pb-4 sm:pb-5 text-gray-300 hidden">
+          <p class="font-poppins text-base sm:text-lg md:text-[1.3rem] md:leading-[2.6rem]">
+            Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from Rs 250 to Rs 1,100 a month.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ Item 3 -->
+      <div class="bg-[#2d2d2d] rounded-lg overflow-hidden">
+        <button class="w-full flex justify-between items-center px-4 sm:px-6 py-6 sm:py-8 text-left text-lg sm:text-xl md:text-[1.7rem] font-semibold text-white accordion-toggle">
+          Where can I watch?
+          <span class="text-2xl sm:text-3xl font-bold ml-2">+</span>
+        </button>
+        <div class="accordion-content px-4 sm:px-6 pb-4 sm:pb-5 text-gray-300 hidden">
+          <p class="font-poppins text-base sm:text-lg md:text-[1.3rem] md:leading-[2.6rem]">
+            Watch anywhere, anytime. Sign in with your Netflix account on the web or Netflix app on smart TVs, phones, tablets, and more.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ Item 4 -->
+      <div class="bg-[#2d2d2d] rounded-lg overflow-hidden">
+        <button class="w-full flex justify-between items-center px-4 sm:px-6 py-6 sm:py-8 text-left text-lg sm:text-xl md:text-[1.7rem] font-semibold text-white accordion-toggle">
+          Is Netflix good for kids?
+          <span class="text-2xl sm:text-3xl font-bold ml-2">+</span>
+        </button>
+        <div class="accordion-content px-4 sm:px-6 pb-4 sm:pb-5 text-gray-300 hidden">
+          <p class="font-poppins text-base sm:text-lg md:text-[1.3rem] md:leading-[2.6rem]">
+            Netflix Kids experience is included. Kids profiles come with PIN-protected parental controls to manage what kids can watch.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ Item 5 -->
+      <div class="bg-[#2d2d2d] rounded-lg overflow-hidden">
+        <button class="w-full flex justify-between items-center px-4 sm:px-6 py-6 sm:py-8 text-left text-lg sm:text-xl md:text-[1.7rem] font-semibold text-white accordion-toggle">
+          What can I watch on Netflix?
+          <span class="text-2xl sm:text-3xl font-bold ml-2">+</span>
+        </button>
+        <div class="accordion-content px-4 sm:px-6 pb-4 sm:pb-5 text-gray-300 hidden">
+          <p class="font-poppins text-base sm:text-lg md:text-[1.3rem] md:leading-[2.6rem]">
+            Netflix has a huge library of TV shows, movies, documentaries, anime, and originals. Watch anytime, anywhere.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<div class="emailsection bg-black w-full py-10 px-4 flex justify-center items-center">
+  <div class="mid_email w-full max-w-3xl">
+
+    <!-- Text -->
+    <div class="text text-center mb-6">
+      <h2 class="text-lg sm:text-xl md:text-2xl text-white font-poppins">
+        Ready to watch? Enter your email to create or restart your membership.
+      </h2>
+    </div>
+
+    <!-- Input + Button -->
+    <div class="input flex flex-col sm:flex-row gap-3 justify-center">
+      <input 
+        type="email" 
+        placeholder="Email address" 
+        class="bg-transparent text-white border border-white py-3 px-4 w-full rounded-md font-poppins text-base sm:text-lg" 
+        required
+      />
+      <button class="bg-red-600 hover:bg-red-700 transition duration-200 py-3 px-6 w-full sm:w-auto rounded-md text-white text-base sm:text-lg font-semibold">
+        Get Started
+      </button>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer section -->
+
+<div class="footer w-full bg-black py-20">
+  <div class="mid-footer w-[90%] max-w-[90rem] mx-auto grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
+    
+    <div class="mid-columns flex flex-col gap-4">
+      <a href="#" class="text-white text-[1.2rem] hover:text-red-600 duration-300">FAQ</a>
+      <a href="#" class="text-white text-[1.2rem] hover:text-red-600 duration-300">Investor Relations</a>
+      <a href="#" class="text-white text-[1.2rem] hover:text-red-600 duration-300">Privacy</a>
+      <a href="#" class="text-white text-[1.2rem] hover:text-red-600 duration-300">Speed Test</a>
+    </div>
+
+    <div class="mid-columns flex flex-col gap-4">
+      <a href="#" class="text-white text-[1.2rem] hover:text-red-600 duration-300">Help Center</a>
+      <a href="#" class="text-white text-[1.2rem] hover:text-red-600 duration-300">Jobs</a>
+      <a href="#" class="text-white text-[1.2rem] hover:text-red-600 duration-300">Cookie Preferences</a>
+      <a href="#" class="text-white text-[1.2rem] hover:text-red-600 duration-300">Legal Notices</a>
+    </div>
+
+    <div class="mid-columns flex flex-col gap-4">
+      <a href="#" class="text-white text-[1.2rem] hover:text-red-600 duration-300">Account</a>
+      <a href="#" class="text-white text-[1.2rem] hover:text-red-600 duration-300">Ways to Watch</a>
+      <a href="#" class="text-white text-[1.2rem] hover:text-red-600 duration-300">Corporate Information</a>
+      <a href="#" class="text-white text-[1.2rem] hover:text-red-600 duration-300">Only on Netflix</a>
+    </div>
+
+    <div class="mid-columns flex flex-col gap-4">
+      <a href="#" class="text-white text-[1.2rem] hover:text-red-600 duration-300">Media Center</a>
+      <a href="#" class="text-white text-[1.2rem] hover:text-red-600 duration-300">Terms of Use</a>
+      <a href="#" class="text-white text-[1.2rem] hover:text-red-600 duration-300">Contact Us</a>
+    </div>
+
+  </div>
+</div>
 
   <!-- Hide scrollbar -->
   <style>
@@ -133,6 +345,15 @@
     document.getElementById('slide-right').addEventListener('click', () => {
       slider.scrollBy({ left: 300, behavior: 'smooth' });
     });
+     const toggles = document.querySelectorAll('.accordion-toggle');
+  toggles.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const content = btn.nextElementSibling;
+      content.classList.toggle('hidden');
+      const symbol = btn.querySelector('span');
+      symbol.textContent = content.classList.contains('hidden') ? '+' : '×';
+    });
+  });
   </script>
 </div>
 
