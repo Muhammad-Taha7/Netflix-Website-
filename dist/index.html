@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="/src/input.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
 </head>
 <body class="p-0 m-0 overflow-y-scroll scrollbar-thin scrollbar-thumb-red-600 scrollbar-track-black bg-black">
  <div class="relative h-[50rem] md:min-h-screen w-full bg-[url('/Images/bg.jpg')] bg-cover bg-center bg-no-repeat before:absolute before:inset-0 before:bg-black/80 before:z-0">
@@ -329,32 +330,6 @@
 
   </div>
 </div>
-
-  <!-- Hide scrollbar -->
-  <style>
-    .scrollbar-hide::-webkit-scrollbar { display: none; }
-    .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
-  </style>
-
-  <!-- JS -->
-  <script>
-    const slider = document.getElementById('slider');
-    document.getElementById('slide-left').addEventListener('click', () => {
-      slider.scrollBy({ left: -300, behavior: 'smooth' });
-    });
-    document.getElementById('slide-right').addEventListener('click', () => {
-      slider.scrollBy({ left: 300, behavior: 'smooth' });
-    });
-     const toggles = document.querySelectorAll('.accordion-toggle');
-  toggles.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const content = btn.nextElementSibling;
-      content.classList.toggle('hidden');
-      const symbol = btn.querySelector('span');
-      symbol.textContent = content.classList.contains('hidden') ? '+' : '×';
-    });
-  });
-  </script>
 </div>
 
 
